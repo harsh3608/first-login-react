@@ -1,4 +1,8 @@
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
+import NotFound from "./NotFound";
+import Home from "./Home";
+import Login from "./Login";
+import Register from "./Register";
 
 let NavBar = (props) => {
 
@@ -6,7 +10,7 @@ let NavBar = (props) => {
         <div>
           <BrowserRouter>
             <nav className="navbar navbar-expand-lg navbar-light ">
-              <a className="navbar-brand px-4 text-dark" >
+              <a href="/" className="navbar-brand px-4 text-dark">
                 <strong>React ShowTime</strong>
                 
               </a>
