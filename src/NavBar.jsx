@@ -3,6 +3,8 @@ import NotFound from "./NotFound";
 import Home from "./Home";
 import Login from "./Login";
 import Register from "./Register";
+import './styles/NavBar.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 let NavBar = (props) => {
 
