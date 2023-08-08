@@ -9,7 +9,7 @@ import NotFound from './NotFound';
 
 const App = () => (
   <div>
-    <NavBar />
+    <NavBar /> 
     
     <BrowserRouter>
       <Routes>
