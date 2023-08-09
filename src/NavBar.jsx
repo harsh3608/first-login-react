@@ -1,6 +1,12 @@
 import "./styles/NavBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import Login from './Login';
+import Home from './Home';
+import Register from './Register';
+import NotFound from './NotFound';
+
 let NavBar = () => {
   return (
     <div>
@@ -43,6 +49,14 @@ let NavBar = () => {
         </div>
       </nav>
 
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="*" element={<NotFound/>} />
+      </Routes>
+    </BrowserRouter>
       
 
     </div>
